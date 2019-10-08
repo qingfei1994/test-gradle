@@ -6,6 +6,10 @@ plugins {
 release {
     failOnUnversionedFiles = false
     failOnCommitNeeded = false
+    git {
+        requireBranch = 'master'
+        pushToRemote = 'origin'
+    }
 }
 
 group 'org.qingfei.devops'
