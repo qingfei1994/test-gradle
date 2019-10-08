@@ -1,5 +1,11 @@
 plugins {
     id 'java'
+    id 'net.researchgate.release' version '2.6.0'
+}
+
+release {
+    failOnUnversionedFiles = false
+    failOnCommitNeeded = false
 }
 
 group 'org.qingfei.devops'
